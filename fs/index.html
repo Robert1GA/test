@@ -10,11 +10,13 @@
     <base href="/" />
     <!-- <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7453416/7441192/css/fonts.css" /> -->
     <link href="https://fisco-test-webfiles-1.s3-us-west-2.amazonaws.com/main.min.css" rel="stylesheet" />
-    <link href="https://fisco-test-webfiles-1.s3-us-west-2.amazonaws.com/open-iconic-bootstrap.min.css" rel="stylesheet" />
+    <!-- <link href="https://fisco-test-webfiles-1.s3-us-west-2.amazonaws.com/open-iconic-bootstrap.min.css" rel="stylesheet" /> -->
 
     <!--     ~~~~~ ADDED ~~~~~~     -->
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7453416/7441192/css/fonts.css">
     <link href="C:\Code\pers\test\fs\css\style.css" rel="stylesheet" />
-    <link href="C:\Code\pers\test\fs\css\font-awesome.min.css" rel="stylesheet" />
+    <!-- <link href="C:\Code\pers\test\fs\css\open-iconic-bootstrap.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
 
 
 </head>
@@ -71,15 +73,14 @@
                 <span class="align-self-center">Customer Service</span>
             </div>
             <div class="col-md border border-bottom-0 border-left-0 border-top-0 small d-none d-md-flex order-md-4 h-75">
-                <i class="fa fa-user" aria-hidden="true"></i>
+                <span class="oi oi-person">&nbsp;&nbsp;</span>
                 <span class="align-self-center">Hello, Kyle</span>
             </div>
 
             <div class="col order-md-5 text-right text-md-left">
                 <a href="#" class="text-dark">
                     <span class="oi oi-cart"></span>
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    <span class="d-none d-md-inline-block small">2 items</span>
+                    <span class="d-none d-md-inline-block small"> 2 items</span>
                 </a>
             </div>
         </div>
@@ -365,67 +366,68 @@
         </div>
     </div>
 <!--     ~~~    fsMiniBannerContainer          ~~~ -->
-<div class="container pt-5">
-    <div class="row">
-            <div class="col-md-6 col-12 fsMiniBannerContainer">
-                <img src="https://gallery.mailchimp.com/d2655484a4/images/000e4b7d-e19b-4406-b5c9-3752f3795f94.jpg" class="img-fluid"/>
-                <div style="position: absolute;top: 70%; left: 10%;">
-                    <h3>SALT-AWAY FLASH SALE</h3>
+<div class="container my-5">
+    <div class="row justify-content-between">
+            <div class="col-md-6 col-12 d-flex fsMiniBannerContainer">
+                <div class="fsMiniBannerText bg-primary text-white float-left position-relative d-flex justify-content-center flex-column">
+                        <div class="text-center px-4"><h3 class="font-weight-light">Device Mounts</h3></div>
+                        <div class="text-center px-4"><h1 class="font-weight-light">20% off</h1></div>
+                        <div class="text-center px-4"><h4 class="font-weight-light">Et sit portitor id quam, commodo nam feugiat ornare quam sit vitae, augue ut et.</h4></div>
+                    <a class="text-white position-absolute display-4 shopNow" href="#">Shop Now<span class="oi oi-chevron-right pl-2"></span></a>
                 </div>
-                <div style="position: absolute;top: 80%; left: 10%;">
-                    <h6>Hurry Offer Only Lasts 72 Hours</h6>
-                </div>
+                <img src="https://gallery.mailchimp.com/d2655484a4/images/000e4b7d-e19b-4406-b5c9-3752f3795f94.jpg" class="img-fluid bg-primary"/>
+
             </div>
             <div class="col-md-6 col-12 fsMiniBannerContainer">
-                <img src="https://gallery.mailchimp.com/d2655484a4/images/16fabc61-bf82-44b7-8685-b5e9ba47af08.jpg" class="img-fluid"/>
-                <div style="position: absolute;top: 70%; left: 10%;">
-                    <h3>RACOR FILTERS SALE</h3>
+                <div class="fsMiniBannerText bg-secondary text-dark float-left position-relative d-flex justify-content-center flex-column">
+                    <div class="text-center px-4"><h3 class="font-weight-light">Buy One,</h3></div>
+                    <div class="text-center px-4"><h1 class="font-weight-light">GET ONE FREE</h1></div>
+                    <div class="text-center px-4"><h4 class="font-weight-light">Through October 1st.</h4></div>
+                    <a class="text-dark position-absolute display-4 shopNow" href="#">Shop Now<span class="oi oi-chevron-right pl-2"></span></a>
                 </div>
-                <div style="position: absolute;top: 80%; left: 10%;">
-                    <h6>Save on Snapp, Spin-On &amp; Turbine Series Elements</h6>
-                </div>
+                <img src="https://gallery.mailchimp.com/d2655484a4/images/16fabc61-bf82-44b7-8685-b5e9ba47af08.jpg" class="img-fluid bg-secondary"/>
             </div>
     </div>
 </div>
 
 <!--     ~~~      fsClickableImageContainer          ~~~ -->
-<div class="pt-5 container">
+<div class="my-5 py-3 container">
         <h2 class="h3 text-dark pb-4 headingSeperator d-flex flex-row">Top Categories</h2>
 
     <div class="row">
-            <div class="col-md-4 col-6 pb-1 pt-1">
-                <a>
+            <div class="col-md-4 col-6 pb-1 pt-1 my-3">
+                <a href="#">
                     <img class="img-fluid topCategoriesImage" src="http://static2.businessinsider.com/image/5522f5306bb3f7801500ec0a-1200-632/silicon_valley_episode_5%20arrow.jpg" />
                     <h5 class="font-weight-normal text-dark small pt-2 pb-2 text-uppercase d-flex flex-row justify-content-end align-items-center">
                         <span>Scrum Board</span>
-                        <span class="oi oi-caret-right pl-2 display-4 text-dark"></span>
+                        <span class="oi oi-chevron-right pl-2 display-4 text-dark"></span>
                     </h5>
                 </a>
             </div>
-            <div class="col-md-4 col-6 pb-1 pt-1">
+            <div class="col-md-4 col-6 pb-1 pt-1 my-3">
                 <a href="https://www.google.com/">
                     <img class="img-fluid topCategoriesImage" src="https://image.fisheriessupply.com/f_jpg/f_auto/v1/static-images/click_2" alt="anchor and dock alt" />
                     <h5 class="font-weight-normal text-dark small pt-2 pb-2 text-uppercase d-flex flex-row justify-content-end align-items-center">
                         <span>Anchor &amp; Dock</span>
-                        <span class="oi oi-caret-right pl-2 display-4 text-dark"></span>
+                        <span class="oi oi-chevron-right pl-2 display-4 text-dark"></span>
                     </h5>
                 </a>
             </div>
-            <div class="col-md-4 col-6 pb-1 pt-1">
+            <div class="col-md-4 col-6 pb-1 pt-1 my-3">
                 <a href="https://www.google.com/">
                     <img class="img-fluid topCategoriesImage" src="http://image.fisheriessupply.com/f_jpg/f_auto/v1/static-images/click_1" alt="guy painting boat" />
                     <h5 class="font-weight-normal text-dark small pt-2 pb-2 text-uppercase d-flex flex-row justify-content-end align-items-center">
                         <span>Boat paint</span>
-                        <span class="oi oi-caret-right pl-2 display-4 text-dark"></span>
+                        <span class="oi oi-chevron-right pl-2 display-4 text-dark"></span>
                     </h5>
                 </a>
             </div>
-            <div class="col-md-4 col-6 pb-1 pt-1">
+            <div class="col-md-4 col-6 pb-1 pt-1 my-3">
                 <a href="https://www.fisheriessupply.com">
-                    <img class="img-fluid" src="https://image.fisheriessupply.com/f_jpg/f_auto/v1/static-images/click_3" alt="fender alt tag" />
+                    <img class="img-fluid topCategoriesImage" src="https://image.fisheriessupply.com/f_jpg/f_auto/v1/static-images/click_3" alt="fender alt tag" />
                     <h5 class="font-weight-normal text-dark small pt-2 pb-2 text-uppercase d-flex flex-row justify-content-end align-items-center">
                         <span>Fenders</span>
-                        <span class="oi oi-caret-right pl-2 display-4 text-dark"></span>
+                        <span class="oi oi-chevron-right pl-2 display-4 text-dark"></span>
                     </h5>
                 </a>
             </div>
@@ -433,43 +435,83 @@
 </div>
 
 <!--     ~~~      FSResultContainer          ~~~ -->
-<div class="pt-5 container pb-5">
+<div class="my-5 container">
         <h2 class="h3 text-dark pb-4 headingSeperator d-flex flex-row">Deal Zone</h2>
 
     <div class="row">
-            <div class="col-md-3 col-6">
-                <a href="baldwin-filters-bld-bf588">
+            <div class="col-md-3 col-6 pt-5 pb-5">
+                <a class="nounderline" href="baldwin-filters-bld-bf588">
                     <img class="img-fluid" src="https://image.fisheriessupply.com/f_jpg/f_auto/t_Legacy-250x250/v1/static-images/07481-harken-har-150-it1-tif" alt="Harken 150" />
-                    <p class="extraSmall text-uppercase text-secondary pb-0 mb-0">brand</p>
+                    <p class="extraSmall text-uppercase text-secondary pt-2 pb-0 mb-0">brand</p>
                     <p class="h5 text-dark">Harken 150 Kyle</p>
+                    <p class="h5 text-dark">Sale <span class="h3"> $199.51 </span><s class="h5 text-secondary"> $134.56</s></p>
+                    <p>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                    </p>
                 </a>
             </div>
-            <div class="col-md-3 col-6">
-                <a href="johnson-pump-aqua-jet-wash-down-3-5-gpm">
+            <div class="col-md-3 col-6 pt-5 pb-5">
+                <a class="nounderline" href="johnson-pump-aqua-jet-wash-down-3-5-gpm">
                     <img class="img-fluid" src="http://image.fisheriessupply.com/t_Legacy-250x250/v1/static-images/02218-beckson-bec-fph-1-14-4-ppm-tif" alt="hose" />
-                    <p class="extraSmall text-uppercase text-secondary pb-0 mb-0">brand</p>
+                    <p class="extraSmall text-uppercase text-secondary pt-2 pb-0 mb-0">brand</p>
                     <p class="h5 text-dark">Really Long Product Name That is Really Long so we can see how it renders</p>
+                    <p class="h5 text-dark">Sale <span class="h3"> $199.51 </span><s class="h5 text-secondary"> $134.56</s></p>
+                    <p>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                    </p>
                 </a>
             </div>
-            <div class="col-md-3 col-6">
-                <a href="fisheries-brand-supply-keyfloat-discontinued">
+            <div class="col-md-3 col-6 pt-5 pb-5">
+                <a class="nounderline" href="fisheries-brand-supply-keyfloat-discontinued">
                     <img class="img-fluid" src="http://image.fisheriessupply.com/t_Legacy-250x250/v1/static-images/09003-perko-pko-0159dp8chr-8in-chr-fog-bell-ppm-tif" alt="Bell alt" />
-                    <p class="extraSmall text-uppercase text-secondary pb-0 mb-0">brand</p>
+                    <p class="extraSmall text-uppercase text-secondary pt-2 pb-0 mb-0">brand</p>
                     <p class="h5 text-dark">8 inch Chrome Fog Bell</p>
+                    <p class="h5 text-dark">Sale <span class="h3"> $199.51 </span><s class="h5 text-secondary"> $134.56</s></p>
+                    <p>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                    </p>
                 </a>
             </div>
-            <div class="col-md-3 col-6">
-                <a href="west-system-final-fairing-and-finishing-discontinued">
+            <div class="col-md-3 col-6 pt-5 pb-5">
+                <a class="nounderline" href="west-system-final-fairing-and-finishing-discontinued">
                     <img class="img-fluid" src="http://image.fisheriessupply.com/t_Legacy-250x250/v1/static-images/1000889-yeti-tundra-seafoam-yet-45-it1-tif" alt="green cooler" />
-                    <p class="extraSmall text-uppercase text-secondary pb-0 mb-0">brand</p>
+                    <p class="extraSmall text-uppercase text-secondary pt-2 pb-0 mb-0">brand</p>
                     <p class="h5 text-dark">Seafoam Green Tundra 45</p>
+                    <p class="h5 text-dark">Sale <span class="h3"> $199.51 </span><s class="h5 text-secondary"> $134.56</s></p>
+                    <p>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                    </p>
                 </a>
             </div>
-            <div class="col-md-3 col-6">
-                <a href="alexseal-super-fair-212-fairing-compound-thick-base-only-p2123">
+            <div class="col-md-3 col-6 pt-5 pb-5">
+                <a class="nounderline" href="alexseal-super-fair-212-fairing-compound-thick-base-only-p2123">
                     <img class="img-fluid" src="http://image.fisheriessupply.com/t_Legacy-250x250/v1/static-images/1001594-mastervolt-12-80-mls-series-mvt-65010006-it1-tif" alt="mvt" />
-                    <p class="extraSmall text-uppercase text-secondary pb-0 mb-0">brand</p>
+                    <p class="extraSmall text-uppercase text-secondary pt-2 pb-0 mb-0">brand</p>
                     <p class="h5 text-dark">Mastervolt Lithium Ion Battery</p>
+                    <p class="h5 text-dark">Sale <span class="h3"> $199.51 </span><s class="h5 text-secondary"> $134.56</s></p>
+                    <p>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                      <span class="oi oi-star text-warning"></span>
+                    </p>
                 </a>
             </div>
     </div>
@@ -482,8 +524,41 @@
     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </div>
 
+
   <div class="fsCustomerServicePhotos">
-    <div class="fsCustomerServicePhotosContainer">
+    <div class="fsCustomerServicePhotosContainer d-inline-block mx-2">
+      <div>
+        <img src="C:\Code\pers\test\fs\img\photo.jpeg" />
+      </div>
+      <div>
+        <h4 class="text-center">James</h4>
+      </div>
+    </div>
+    <div class="fsCustomerServicePhotosContainer d-inline-block mx-2">
+      <div>
+        <img src="C:\Code\pers\test\fs\img\photo.jpeg" />
+      </div>
+      <div>
+        <h4 class="text-center">James</h4>
+      </div>
+    </div>
+    <div class="fsCustomerServicePhotosContainer d-inline-block mx-2">
+      <div>
+        <img src="C:\Code\pers\test\fs\img\photo.jpeg" />
+      </div>
+      <div>
+        <h4 class="text-center">James</h4>
+      </div>
+    </div>
+    <div class="fsCustomerServicePhotosContainer d-inline-block mx-2">
+      <div>
+        <img src="C:\Code\pers\test\fs\img\photo.jpeg" />
+      </div>
+      <div>
+        <h4 class="text-center">James</h4>
+      </div>
+    </div>
+    <div class="fsCustomerServicePhotosContainer d-inline-block mx-2">
       <div>
         <img src="C:\Code\pers\test\fs\img\photo.jpeg" />
       </div>
@@ -492,7 +567,6 @@
       </div>
     </div>
   </div>
-
 
 
   <!--     ~~~     fsContactUsBand          ~~~ -->
@@ -505,10 +579,16 @@
                   <a class="pb-0 mb-0 pr-4 pl-4 text-dark display-4" fst="" fsc href="">800-426-6930</a>
               </div>
               <div class="border border-dark border-right-0 border-top-0 border-bottom-0 align-self-center">
-                  <a class="pb-0 mb-0 pr-4 pl-4 text-dark display-4" fst="" fsc href="">Email</a>
+                  <a class="pb-0 mb-0 pr-4 pl-4 text-dark display-4" fst="" fsc href="">
+                    <span class="oi oi-envelope-closed"></span>
+                    Email
+                  </a>
               </div>
               <div class="border border-dark border-right-0 border-top-0 border-bottom-0 align-self-center">
-                  <a class="pb-0 mb-0 pr-4 pl-4 text-dark display-4" fst="" fsc href="">Live Chat</a>
+                  <a class="pb-0 mb-0 pr-4 pl-4 text-dark display-4" fst="" fsc href="">
+                    <span class="oi oi-comment-square"></span>
+                    Live Chat
+                  </a>
               </div>
       </div>
   </div>

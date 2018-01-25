@@ -6918,6 +6918,10 @@ a, button {
   .dropdown-menu.megaMenu {
     width: 1336px; } }
 
+.nounderline:hover {
+  text-decoration: none;
+}
+
 .bucketItem, .bucket {
   background-color: #fff;
   text-decoration: none !important; }
@@ -6946,14 +6950,20 @@ a, button {
 .cursorDefault, .bucket:hover {
   cursor: default; }
 
-.topCategoriesImage {
-  width: 100%;
-  height: 199px;
+img.topCategoriesImage {
+  width: 21vw;
+  height: 14vw;
 }
 
-div.fsMiniBannerContainer img {
-  width: 100%;
-  height: 295px;
+div.fsMiniBannerContainer img,
+div.fsMiniBannerContainer div.fsMiniBannerText  {
+  width: 15vw;
+  height: 15vw;
+}
+
+div.fsMiniBannerText .shopNow {
+  bottom: 5%;
+  right: 5%;
 }
 
 div.customerServiceSection {
@@ -6979,10 +6989,6 @@ div.fsCustomerServicePhotosContainer img {
   height: 150px;
   border-radius: 50%;
   margin-bottom: 10px;
-}
-
-div.fsCustomerServicePhotosContainer div {
-
 }
 
 div.flagshipBand {
