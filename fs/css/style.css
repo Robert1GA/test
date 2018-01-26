@@ -6957,8 +6957,9 @@ img.topCategoriesImage {
 
 div.fsMiniBannerContainer img,
 div.fsMiniBannerContainer div.fsMiniBannerText  {
-  width: 15vw;
-  height: 15vw;
+  /* width: 14vw; */
+  width: 50%;
+  height: 14vw;
 }
 
 div.fsMiniBannerText .shopNow {
@@ -6966,21 +6967,8 @@ div.fsMiniBannerText .shopNow {
   right: 5%;
 }
 
-div.customerServiceSection {
-  background-color: #f7f7f7;
-}
-
-div.fsCustomerService h1,
-div.fsCustomerService p {
-  width: 40%;
-}
-
-div.fsCustomerServicePhotos {
-  position: relative;
-}
-
 div.fsCustomerServicePhotosContainer {
-  position: relative;
+  /* position: relative; */
   width: 150px;
 }
 
@@ -6989,9 +6977,4 @@ div.fsCustomerServicePhotosContainer img {
   height: 150px;
   border-radius: 50%;
   margin-bottom: 10px;
-}
-
-div.flagshipBand {
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
