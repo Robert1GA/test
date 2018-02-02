@@ -7026,23 +7026,23 @@ div.carousel-item.carousel-item-next.carousel-item-left ~
   div > div.carousel-indicators > div.cIndicator.active,
 div.carousel-item.active.carousel-item-left ~
   div > div.carousel-indicators > div.cIndicator.active {
-  -webkit-animation: line-from-left 0.6s ease both;
-  -moz-animation: line-from-left 0.6s ease both;
-  -o-animation: line-from-left 0.6s ease both;
-  animation: line-from-left 0.6s ease both;
+  -webkit-animation: indicator-from-left 0.6s ease both;
+  -moz-animation: indicator-from-left 0.6s ease both;
+  -o-animation: indicator-from-left 0.6s ease both;
+  animation: indicator-from-left 0.6s ease both;
 }
 
 div.carousel-item.carousel-item-prev.carousel-item-right ~
   div > div.carousel-indicators > div.cIndicator.active,
 div.carousel-item.active.carousel-item-right ~
   div > div.carousel-indicators > div.cIndicator.active {
-  -webkit-animation: line-from-right 0.6s ease both;
-  /* -moz-animation: line-from-right 0.6s ease both; */
-  /* -o-animation: line-from-right 0.6s ease both; */
-  animation: line-from-right 0.6s ease both;
+  -webkit-animation: indicator-from-right 0.6s ease both;
+  -moz-animation: indicator-from-right 0.6s ease both;
+  -o-animation: indicator-from-right 0.6s ease both;
+  animation: indicator-from-right 0.6s ease both;
 }
 
-@keyframes line-from-left {
+@keyframes indicator-from-left {
   0% {
     -webkit-transform: translateX(-100%);
         -ms-transform: translateX(-100%);
@@ -7055,7 +7055,7 @@ div.carousel-item.active.carousel-item-right ~
   }
 }
 
-@keyframes line-from-right {
+@keyframes indicator-from-right {
   0% {
     -webkit-transform: translateX(100%);
        -ms-transform: translateX(-100%);
@@ -7069,7 +7069,18 @@ div.carousel-item.active.carousel-item-right ~
 }
 
 @media (max-width: 575px) {
-  .no-small-border {
+  html {
+    font-size: 0.85rem !important; }
+  .display-1 {
+    font-size: 1.8rem !important; }
+  .display-4 {
+    font-size: 0.95rem !important; }
+  .border-sm-top-only {
+    border-top: 1px solid !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-left: none !important; }
+  .border-sm-none {
     border: none !important; }
   .w-sm-50 {
     width: 50% !important; }
