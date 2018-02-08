@@ -21,7 +21,7 @@
     <!-- <link href="C:\Code\pers\test\fs\css\open-iconic-bootstrap.min.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
 
-
+    <script src="C:\Code\pers\test\fs\js\modernizr.js"></script>
 </head>
 <body>
     <div>
@@ -96,92 +96,109 @@
     <div class="collapse navbar-collapse" id="hamburgerToggle">
         <div class="nav nav-fill w-100">
 
-<div class="nav-item dropdown open">
-    <a class="nav-link text-primary font-weight-bold dropdown-toggle" href="#" role="button" id="bucketMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Departments
-    </a>
+          <div class="nav-item dropdown open">
+              <a class="nav-link text-primary font-weight-bold dropdown-toggle" href="#" role="button" id="bucketMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Departments
+              </a>
 
-    <div class="dropdown-menu megaMenu" aria-labelledby="bucketMenuLink" role="menu">
-        <div class="d-flex flex-column">
-            <div class="bucketWrapper row">
-                <div class="col-md-3">
-                        <div class="bucket" href="#">Electrical &amp; Lighting</div>
-                        <div class="bucket" href="#">Anchor &amp; Dock</div>
-                        <div class="bucket" href="#">Maintenance, Resins, &amp; Cleaning Supplies</div>
-                        <div class="bucket" href="#">Pumps &amp; Plumbing</div>
-                        <div class="bucket" href="#">Engine &amp; Steering</div>
-                        <div class="bucket" href="#">Galley &amp; Cabin</div>
-                        <div class="bucket" href="#">Hardware</div>
-                        <div class="bucket" href="#">Paint</div>
-                        <div class="bucket" href="#">Sailboat</div>
-                        <div class="bucket" href="#">Clothing</div>
-                        <div class="bucket" href="#">Safety</div>
-                        <div class="bucket" href="#">Electronics &amp; Navigation</div>
-                </div>
+              <div class="dropdown-menu megaMenu" aria-labelledby="bucketMenuLink" role="menu">
+                  <!-- <div class=""> -->
+                      <!-- <div class="bucketWrapper "> -->
+                          <!-- <div class=""> -->
+          										<ul class="dropdownContent list-unstyled">
+          												<li class="bucket has-children">
+                                      <a>Electrical &amp; Lighting</a>
+
+          														<ul class="secondaryDropdown isHidden list-unstyled pt-3">
+          																<li class="has-children">
+          																		<a class="text-uppercase text-dark border border-secondary border-top-0 border-right-0 border-left-0">Lighting</a>
+          																		<ul class="isHidden list-unstyled">
+          																				<li><a href="" class="bucketItem">LED Lighting</a></li>
+          																				<li><a href="" class="bucketItem">Navigation Lights</a></li>
+          																				<li><a href="" class="bucketItem">Cabin Lights</a></li>
+          																				<li><a href="" class="bucketItem">Courtesty Lights</a></li>
+          																				<li><a href="" class="bucketItem">Spotlights</a></li>
+          																				<li><a href="" class="bucketItem">Flood & Spreader Lights</a></li>
+          																				<li><a href="" class="bucketItem">Underwater Lights</a></li>
+          																				<li><a href="" class="bucketItem">Docking Lights</a></li>
+          																				<li><a href="" class="bucketItem">Flashlights</a></li>
+          																				<li><a href="" class="bucketItem">Light Bulbs</a></li>
+          																				<li><a href="" class="bucketItem">Indicator Lights</a></li>
+          																				<li><a href="" class="bucketItem">Trailer Lights</a></li>
+          																				<li><a href="" class="bucketItem">Engine Room & Utility Lights</a></li>
+          																				<li><a href="" class="bucketItem">Work Lights</a></li>
+          																		</ul>
+          																</li>
+
+                                          <li class="has-children">
+                                              <a class="text-uppercase text-dark border border-secondary border-top-0 border-right-0 border-left-0">Electrical</a>
+                                              <ul class="list-unstyled">
+                                                  <li><a href="" class="bucketItem">Electrical Panels & Accessories</a></li>
+                                                  <li><a href="" class="bucketItem">Marine Battery Chargers & Inverters</a></li>
+                                                  <li><a href="" class="bucketItem">Marine Fuel Cell Generators</a></li>
+                                                  <li><a href="" class="bucketItem">Marine Batteries & Accessories</a></li>
+                                                  <li><a href="" class="bucketItem">Marine Wire & Accessories</a></li>
+                                                  <li><a href="" class="bucketItem">Power Supplies & Converters</a></li>
+                                                  <li><a href="" class="bucketItem">12 Volt Plugs and Sockets</a></li>
+                                                  <li><a href="" class="bucketItem">Solar Power</a></li>
+                                                  <li><a href="" class="bucketItem">Electrical Tape & Tools</a></li>
+                                                  <li><a href="" class="bucketItem">Electrical Switches</a></li>
+                                                  <li><a href="" class="bucketItem">Fuses</a></li>
+                                              </ul>
+                                          </li>
+          														</ul>
+          												</li>
 
 
-                        <div id=""></div>
-                            <div class="col-md-3 bg-white submenu">
+          												<li class="bucket"><a>Anchor &amp; Dock</a></li>
+                                  <li class="bucket"><a>Maintenance, Resins, &amp; Cleaning Supplies</a></li>
+                                  <li class="bucket"><a>Pumps &amp; Plumbing</a></li>
+                                  <li class="bucket"><a>Engine &amp; Steering</a></li>
+                                  <li class="bucket"><a>Galley &amp; Cabin</a></li>
+                                  <li class="bucket"><a>Hardware</a></li>
+                                  <li class="bucket"><a>Paint</a></li>
+                                  <li class="bucket"><a>Sailboat</a></li>
+                                  <li class="bucket"><a>Clothing</a></li>
+                                  <li class="bucket"><a>Safety</a></li>
+                                  <li class="bucket"><a>Electronics &amp; Navigation</a></li>
 
-    <div class="pb-3">
-            <div class="text-dark small text-uppercase border border-secondary border-left-0 border-right-0 border-top-0">Lighting</div>
-        <ul class="list-unstyled pt-1">
-                <li><a href ="" class="bucketItem">LED Lighting</a></li>
-                <li><a href ="" class="bucketItem">Navigation Lights</a></li>
-                <li><a href ="" class="bucketItem">Cabin Lights</a></li>
-                <li><a href ="" class="bucketItem">Courtesty Lights</a></li>
-                <li><a href ="" class="bucketItem">Spotlights</a></li>
-                <li><a href ="" class="bucketItem">Flood & Spreader Lights</a></li>
-                <li><a href ="" class="bucketItem">Underwater Lights</a></li>
-                <li><a href ="" class="bucketItem">Docking Lights</a></li>
-                <li><a href ="" class="bucketItem">Flashlights</a></li>
-                <li><a href ="" class="bucketItem">Light Bulbs</a></li>
-                <li><a href ="" class="bucketItem">Indicator Lights</a></li>
-                <li><a href ="" class="bucketItem">Trailer Lights</a></li>
-                <li><a href ="" class="bucketItem">Engine Room & Utility Lights</a></li>
-                <li><a href ="" class="bucketItem">Work Lights</a></li>
-        </ul>
-    </div>
-                            </div>
-                            <div class="col-md-3 bg-white submenu">
+          										</ul>
 
-    <div class="pb-3">
-            <div class="text-dark small text-uppercase border border-secondary border-left-0 border-right-0 border-top-0">Electrical</div>
-        <ul class="list-unstyled pt-1">
-                <li><a href ="" class="bucketItem">Electrical Panels & Accessories</a></li>
-                <li><a href ="" class="bucketItem">Marine Battery Chargers & Inverters</a></li>
-                <li><a href ="" class="bucketItem">Marine Fuel Cell Generators</a></li>
-                <li><a href ="" class="bucketItem">Marine Batteries & Accessories</a></li>
-                <li><a href ="" class="bucketItem">Marine Wire & Accessories</a></li>
-                <li><a href ="" class="bucketItem">Power Supplies & Converters</a></li>
-                <li><a href ="" class="bucketItem">12 Volt Plugs and Sockets</a></li>
-                <li><a href ="" class="bucketItem">Solar Power</a></li>
-                <li><a href ="" class="bucketItem">Electrical Tape & Tools</a></li>
-                <li><a href ="" class="bucketItem">Electrical Switches</a></li>
-                <li><a href ="" class="bucketItem">Fuses</a></li>
-        </ul>
-    </div>
-    <div class="pb-3">
-            <div class="text-dark small text-uppercase border border-secondary border-left-0 border-right-0 border-top-0">Shore Power</div>
-        <ul class="list-unstyled pt-1">
-        </ul>
-    </div>
-                            </div>
-                        <div id=""></div>
-                        <div id=""></div>
-                        <div id=""></div>
-                        <div id=""></div>
-                        <div id=""></div>
-                        <div id=""></div>
-                        <div id=""></div>
-                        <div id=""></div>
-                        <div id=""></div>
-                        <div id=""></div>
-                        <div id=""></div>
-            </div>
-        </div>
-    </div>
-</div>
+
+
+
+                          <!-- </div> -->
+
+
+                                  <div id=""></div>
+          		 <div class="col-md-3 bg-white submenu">
+
+
+          				</div>
+          				<!-- <div class="col-md-3 bg-white submenu">
+
+
+          				<div class="pb-3">
+          						<div class="text-dark small text-uppercase border border-secondary border-left-0 border-right-0 border-top-0">Shore Power</div>
+          						<ul class="list-unstyled pt-1">
+          						</ul>
+          				</div>
+          		</div> -->
+                                  <div id=""></div>
+                                  <div id=""></div>
+                                  <div id=""></div>
+                                  <div id=""></div>
+                                  <div id=""></div>
+                                  <div id=""></div>
+                                  <div id=""></div>
+                                  <div id=""></div>
+                                  <div id=""></div>
+                                  <div id=""></div>
+                                  <div id=""></div>
+                      <!-- </div> -->
+                  <!-- </div> -->
+              </div>
+          </div>
 
 
 <div class="nav-item dropdown open">
@@ -775,10 +792,12 @@
 
 
         <script src="https://fisco-test-webfiles-1.s3-us-west-2.amazonaws.com/polyfills.js"></script>
-        <script src="https://fisco-test-webfiles-1.s3-us-west-2.amazonaws.com/vendor.js"></script>
+        <!-- <script src="https://fisco-test-webfiles-1.s3-us-west-2.amazonaws.com/vendor.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="C:\Code\pers\test\fs\js\jquery.menu-aim.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <script src="C:\Code\pers\test\fs\js\main.js"></script>
 
 
         <!-- <script src="/scripts/fsa.js"></script> -->
