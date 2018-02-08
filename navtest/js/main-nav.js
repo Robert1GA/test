@@ -16,7 +16,7 @@ jQuery(document).ready(function($){
 		//prevent default clicking on direct children of .dropdownContent
 		event.preventDefault();
 		var selected = $(this);
-		selected.next('ul').removeClass('is-hidden').end().parent('.has-children').parent('ul').addClass('move-out');
+		selected.next('ul').removeClass('isHidden').end().parent('.has-children').parent('ul').addClass('move-out');
 	});
 
 	//on desktop - differentiate between a user trying to hover over a dropdown item vs trying to navigate into a submenu's contents
@@ -44,7 +44,7 @@ jQuery(document).ready(function($){
 	$('.go-back').on('click', function(){
 		var selected = $(this),
 			visibleNav = $(this).parent('ul').parent('.has-children').parent('ul');
-		selected.parent('ul').addClass('is-hidden').parent('.has-children').parent('ul').removeClass('move-out');
+		selected.parent('ul').addClass('isHidden').parent('.has-children').parent('ul').removeClass('move-out');
 	});
 
 	function toggleNav(){
@@ -53,7 +53,7 @@ jQuery(document).ready(function($){
 		$('.cd-dropdown-trigger').toggleClass('dropdown-is-active', navIsVisible);
 		if( !navIsVisible ) {
 			$('.cd-dropdown').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
-				$('.has-children ul').addClass('is-hidden');
+				$('.has-children ul').addClass('isHidden');
 				$('.move-out').removeClass('move-out');
 				$('.is-active').removeClass('is-active');
 			});
