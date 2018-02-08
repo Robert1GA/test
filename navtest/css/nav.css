@@ -118,16 +118,16 @@ header {
 
 
 .cd-dropdown h2,
-.cd-dropdown-content a,
-.cd-dropdown-content ul a {
+.dropdownContent a,
+.dropdownContent ul a {
   height: 50px;
   line-height: 50px;
 }
 
 
 .cd-dropdown h2,
-.cd-dropdown-content a,
-.cd-dropdown-content ul a {
+.dropdownContent a,
+.dropdownContent ul a {
   padding: 0 20px;
 }
 
@@ -224,7 +224,7 @@ header {
 }
 
 
-.cd-dropdown-content, .cd-dropdown-content ul {
+.dropdownContent, .dropdownContent ul {
   position: absolute;
   top: 0;
   left: 0;
@@ -237,7 +237,7 @@ header {
   transition: transform 0.3s;
   padding-top: 50px;
 }
-.cd-dropdown-content a, .cd-dropdown-content ul a {
+.dropdownContent a, .dropdownContent ul a {
   display: block;
   color: #ffffff;
   /* truncate text with ellipsis if too long */
@@ -248,17 +248,17 @@ header {
   border-color: #242643;
   border-style: solid;
 }
-.cd-dropdown-content li:first-of-type > a, .cd-dropdown-content ul li:first-of-type > a {
+.dropdownContent li:first-of-type > a, .dropdownContent ul li:first-of-type > a {
   border-top-width: 0;
 }
-.cd-dropdown-content li:last-of-type > a, .cd-dropdown-content ul li:last-of-type > a {
+.dropdownContent li:last-of-type > a, .dropdownContent ul li:last-of-type > a {
   border-bottom-width: 1px;
 }
 
-.cd-dropdown-content .cd-divider + li > a, .cd-dropdown-content ul .cd-divider + li > a {
+.dropdownContent .cd-divider + li > a, .dropdownContent ul .cd-divider + li > a {
   border-top-width: 0;
 }
-.cd-dropdown-content a, .cd-dropdown-content .cd-search, .cd-dropdown-content ul a, .cd-dropdown-content ul .cd-search {
+.dropdownContent a, .dropdownContent .cd-search, .dropdownContent ul a, .dropdownContent ul .cd-search {
   /* Force Hardware Acceleration */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -271,7 +271,7 @@ header {
   -moz-transition: opacity 0.3s, -moz-transform 0.3s;
   transition: opacity 0.3s, transform 0.3s;
 }
-.cd-dropdown-content.is-hidden, .cd-dropdown-content ul.is-hidden {
+.dropdownContent.is-hidden, .dropdownContent ul.is-hidden {
   /* push the secondary dropdown items to the right */
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
@@ -279,11 +279,11 @@ header {
   -o-transform: translateX(100%);
   transform: translateX(100%);
 }
-.cd-dropdown-content.is-hidden > li > a, .cd-dropdown-content.is-hidden > li > .cd-search, .cd-dropdown-content.is-hidden > .cd-divider, .cd-dropdown-content.move-out > li > a, .cd-dropdown-content.move-out > li > .cd-search, .cd-dropdown-content.move-out > .cd-divider, .cd-dropdown-content ul.is-hidden > li > a, .cd-dropdown-content ul.is-hidden > li > .cd-search, .cd-dropdown-content ul.is-hidden > .cd-divider, .cd-dropdown-content ul.move-out > li > a, .cd-dropdown-content ul.move-out > li > .cd-search, .cd-dropdown-content ul.move-out > .cd-divider {
+.dropdownContent.is-hidden > li > a, .dropdownContent.is-hidden > li > .cd-search, .dropdownContent.is-hidden > .cd-divider, .dropdownContent.move-out > li > a, .dropdownContent.move-out > li > .cd-search, .dropdownContent.move-out > .cd-divider, .dropdownContent ul.is-hidden > li > a, .dropdownContent ul.is-hidden > li > .cd-search, .dropdownContent ul.is-hidden > .cd-divider, .dropdownContent ul.move-out > li > a, .dropdownContent ul.move-out > li > .cd-search, .dropdownContent ul.move-out > .cd-divider {
   /* lower down the dropdown items opacity - when secondary dropdown slides in or for dropdown items hidden on the right */
   opacity: 0;
 }
-.cd-dropdown-content.move-out > li > a, .cd-dropdown-content.move-out > li > .cd-search, .cd-dropdown-content ul.move-out > li > a, .cd-dropdown-content ul.move-out > li > .cd-search {
+.dropdownContent.move-out > li > a, .dropdownContent.move-out > li > .cd-search, .dropdownContent ul.move-out > li > a, .dropdownContent ul.move-out > li > .cd-search {
   /* push the dropdown items to the left when secondary dropdown slides in */
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);
@@ -291,26 +291,26 @@ header {
   -o-transform: translateX(-100%);
   transform: translateX(-100%);
 }
-.dropdown-is-active .cd-dropdown-content, .dropdown-is-active .cd-dropdown-content ul {
+.dropdown-is-active .dropdownContent, .dropdown-is-active .dropdownContent ul {
   -webkit-overflow-scrolling: touch;
 }
 
 
-.cd-dropdown-content .cd-dropdown-gallery .cd-dropdown-item, .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item {
+.dropdownContent .cd-dropdown-gallery .cd-dropdown-item, .dropdownContent .cd-dropdown-icons .cd-dropdown-item {
   /* items with picture (or icon) and title */
   height: 80px;
   line-height: 80px;
 }
-.cd-dropdown-content .cd-dropdown-gallery .cd-dropdown-item h3, .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item h3 {
+.dropdownContent .cd-dropdown-gallery .cd-dropdown-item h3, .dropdownContent .cd-dropdown-icons .cd-dropdown-item h3 {
   /* truncate text with ellipsis if too long */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.cd-dropdown-content .cd-dropdown-gallery .cd-dropdown-item {
+.dropdownContent .cd-dropdown-gallery .cd-dropdown-item {
   padding-left: 90px;
 }
-.cd-dropdown-content .cd-dropdown-gallery img {
+.dropdownContent .cd-dropdown-gallery img {
   position: absolute;
   display: block;
   height: 40px;
@@ -319,17 +319,17 @@ header {
   top: 50%;
   margin-top: -20px;
 }
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item {
+.dropdownContent .cd-dropdown-icons .cd-dropdown-item {
   padding-left: 75px;
   position: relative;
 }
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item p {
+.dropdownContent .cd-dropdown-icons .cd-dropdown-item p {
   color: #111433;
   font-size: 1.3rem;
   /* hide description on small devices */
   display: none;
 }
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item::before {
+.dropdownContent .cd-dropdown-icons .cd-dropdown-item::before {
   /* item icon */
   content: '';
   display: block;
@@ -343,40 +343,40 @@ header {
   background-position: center center;
   background-size: 40px 40px;
 }
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-1::before {
+.dropdownContent .cd-dropdown-icons .cd-dropdown-item.item-1::before {
   background-image: url("../img/nucleo-icon-1.svg");
 }
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-2::before {
+.dropdownContent .cd-dropdown-icons .cd-dropdown-item.item-2::before {
   background-image: url("../img/nucleo-icon-2.svg");
 }
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-3::before {
+.dropdownContent .cd-dropdown-icons .cd-dropdown-item.item-3::before {
   background-image: url("../img/nucleo-icon-3.svg");
 }
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-4::before {
+.dropdownContent .cd-dropdown-icons .cd-dropdown-item.item-4::before {
   background-image: url("../img/nucleo-icon-4.svg");
 }
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-5::before {
+.dropdownContent .cd-dropdown-icons .cd-dropdown-item.item-5::before {
   background-image: url("../img/nucleo-icon-5.svg");
 }
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-6::before {
+.dropdownContent .cd-dropdown-icons .cd-dropdown-item.item-6::before {
   background-image: url("../img/nucleo-icon-6.svg");
 }
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-7::before {
+.dropdownContent .cd-dropdown-icons .cd-dropdown-item.item-7::before {
   background-image: url("../img/nucleo-icon-7.svg");
 }
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-8::before {
+.dropdownContent .cd-dropdown-icons .cd-dropdown-item.item-8::before {
   background-image: url("../img/nucleo-icon-8.svg");
 }
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-9::before {
+.dropdownContent .cd-dropdown-icons .cd-dropdown-item.item-9::before {
   background-image: url("../img/nucleo-icon-9.svg");
 }
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-10::before {
+.dropdownContent .cd-dropdown-icons .cd-dropdown-item.item-10::before {
   background-image: url("../img/nucleo-icon-10.svg");
 }
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-11::before {
+.dropdownContent .cd-dropdown-icons .cd-dropdown-item.item-11::before {
   background-image: url("../img/nucleo-icon-11.svg");
 }
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-12::before {
+.dropdownContent .cd-dropdown-icons .cd-dropdown-item.item-12::before {
   background-image: url("../img/nucleo-icon-12.svg");
 }
 
@@ -485,10 +485,10 @@ header {
 }
 
 
-.has-children > a, .go-back a {
+.bucket > a, .go-back a {
   position: relative;
 }
-.has-children > a::before, .has-children > a::after, .go-back a::before, .go-back a::after {
+.bucket > a::before, .bucket > a::after, .go-back a::before, .go-back a::after {
   /* arrow icon in CSS - for element with nested unordered lists */
   content: '';
   position: absolute;
@@ -501,14 +501,14 @@ header {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-.has-children > a::before, .go-back a::before {
+.bucket > a::before, .go-back a::before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.has-children > a::after, .go-back a::after {
+.bucket > a::after, .go-back a::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -517,10 +517,10 @@ header {
 }
 
 
-.has-children > a {
+.bucket > a {
   padding-right: 40px;
 }
-.has-children > a::before, .has-children > a::after {
+.bucket > a::before, .bucket > a::after {
   /* arrow goes on the right side - children navigation */
   right: 20px;
   -webkit-transform-origin: 9px 50%;
@@ -531,10 +531,10 @@ header {
 }
 
 
-.cd-dropdown-content .go-back a {
+.dropdownContent .go-back a {
   padding-left: 40px;
 }
-.cd-dropdown-content .go-back a::before, .cd-dropdown-content .go-back a::after {
+.dropdownContent .go-back a::before, .dropdownContent .go-back a::after {
   /* arrow goes on the left side - go back button */
   left: 20px;
   -webkit-transform-origin: 1px 50%;
