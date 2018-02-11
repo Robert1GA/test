@@ -1,22 +1,22 @@
 jQuery(document).ready(function($){
 	//open/close mega-navigation
-	$('.cd-dropdown-trigger').on('click', function(event){
-		event.preventDefault();
-		toggleNav();
-	});
+	// $('.cd-dropdown-trigger').on('click', function(event){
+	// 	event.preventDefault();
+	// 	toggleNav();
+	// });
 
 	//close meganavigation
-	$('.cd-dropdown .cd-close').on('click', function(event){
-		event.preventDefault();
-		toggleNav();
-	});
+	// $('.cd-dropdown .cd-close').on('click', function(event){
+	// 	event.preventDefault();
+	// 	toggleNav();
+	// });
 
 	//on mobile - open submenu
-	$('.has-children').children('a').on('click', function(event){
+	$('.hasChildren').children('a').on('click', function(event){
 		//prevent default clicking on direct children of .dropdownContent
 		event.preventDefault();
 		var selected = $(this);
-		selected.next('ul').removeClass('isHidden').end().parent('.has-children').parent('ul').addClass('move-out');
+		selected.next('ul').removeClass('isHidden').end().parent('.hasChildren').parent('ul').addClass('move-out');
 	});
 
 	//on desktop - differentiate between a user trying to hover over a dropdown item vs trying to navigate into a submenu's contents
@@ -28,7 +28,7 @@ jQuery(document).ready(function($){
         },
         deactivate: function(row) {
         	$(row).children().removeClass('is-active');
-        	if( $('li.has-children:hover').length == 0 || $('li.has-children:hover').is($(row)) ) {
+        	if( $('li.hasChildren:hover').length == 0 || $('li.hasChildren:hover').is($(row)) ) {
         		$('.dropdownContent').find('.fade-in').removeClass('fade-in');
         		$(row).children('ul').addClass('fade-out')
         	}
@@ -43,8 +43,8 @@ jQuery(document).ready(function($){
 	//submenu items - go back link
 	$('.go-back').on('click', function(){
 		var selected = $(this),
-			visibleNav = $(this).parent('ul').parent('.has-children').parent('ul');
-		selected.parent('ul').addClass('isHidden').parent('.has-children').parent('ul').removeClass('move-out');
+			visibleNav = $(this).parent('ul').parent('.hasChildren').parent('ul');
+		selected.parent('ul').addClass('isHidden').parent('.hasChildren').parent('ul').removeClass('move-out');
 	});
 
 	function toggleNav(){
@@ -53,7 +53,7 @@ jQuery(document).ready(function($){
 		$('.cd-dropdown-trigger').toggleClass('open', navIsVisible);
 		if( !navIsVisible ) {
 			$('.dropdown').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
-				$('.has-children ul').addClass('isHidden');
+				$('.hasChildren ul').addClass('isHidden');
 				$('.move-out').removeClass('move-out');
 				$('.is-active').removeClass('is-active');
 			});

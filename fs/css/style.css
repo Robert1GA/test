@@ -218,12 +218,6 @@ div.fsMiniBannerText {
   height: 80%;
 }
 
-/* div.fsMiniBannerText h1 {
-  font-size: 2rem;
-} */
-/* div.fsMiniBannerText h3 {
-  font-size: 1rem;
-} */
 div.fsMiniBannerText h4 {
   font-size: 0.8rem;
 }
@@ -247,7 +241,6 @@ div.fsMiniBannerLeft .shopNow {
 }
 
 div.fsCustomerServicePhotosContainer {
-  /* position: relative; */
   width: 150px;
 }
 
@@ -424,20 +417,6 @@ div.carousel-item.active.carousel-item-right ~
   }
 }
 
-@media (max-width: 991px) {
-  /* a.carousel-control-prev {
-    left: -1em;
-  }
-  a.carousel-control-next {
-    right: -1em;
-  } */
-  .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23004d86' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-  }
-  .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23004d86' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-  }
-}
 
 
 
@@ -501,37 +480,27 @@ div.carousel-item.active.carousel-item-right ~
 
 
 
-.cd-dropdown-wrapper {
-  display: inline-block;
-  position: relative;
-  /* height: 40px; */
-  margin: 30px 0 0 5%;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-}
 
-.cd-dropdown-trigger {
-  display: block;
-  position: relative;
-  padding: 0 36px 0 20px;
-  line-height: 40px;
-  /* background-color: #111433;
-  color: #ffffff; */
-  border-radius: 3px;
-}
-.no-touch .cd-dropdown-trigger:hover {
-  /* background-color: #171b46; */
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 769px) {
     .cd-dropdown-trigger {
       /* font-size: 1.5rem; */
     }
-    /* .cd-dropdown-trigger.dropdown-is-active {
-      background-color: #3f8654;
-    } */
-    /* .no-touch .cd-dropdown-trigger.dropdown-is-active:hover {
-      background-color: #47975f;
-    } */
 }
 
 .cd-dropdown h2,
@@ -809,7 +778,7 @@ div.carousel-item.active.carousel-item-right ~
   .dropdownContent .cd-divider, .dropdownContent ul .cd-divider {
     /* background-color: transparent;
     /* color: #b3b3b3; */
-    border-top: 1px solid #ebebeb; */
+    /* border-top: 1px solid #ebebeb; */
   }
   .dropdownContent .cd-divider + li > a, .dropdownContent ul .cd-divider + li > a {
     /* border-top-width: 1px; */
@@ -918,7 +887,7 @@ div.carousel-item.active.carousel-item-right ~
     .dropdownContent > li:last-of-type a {
       border-bottom: none;
     }
-    .no-touch .dropdownContent > li:not(.has-children) a:hover {
+    .no-touch .dropdownContent > li:not(.hasChildren) a:hover {
       /* color: #3f8654; */
     }
     .dropdownContent.move-out > li > a, .dropdownContent.move-out > li > .cd-search, .dropdownContent.move-out > .cd-divider {
@@ -1004,14 +973,14 @@ div.carousel-item.active.carousel-item-right ~
       width: calc(100% - 60px);
     }
     .dropdownContent .cd-dropdown-icons > li, .dropdownContent .secondaryDropdown > li {
-      width: 50%;
+      width: 35%;
       float: left;
     }
     .dropdownContent .secondaryDropdown {
       background-color: #ffffff;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       overflow: hidden;
-      width: 800px;
+      width: 855px;
       height: 100%;
       padding-left: 0px;
       border-top: solid 1px #dddddd;
@@ -1150,26 +1119,26 @@ div.carousel-item.active.carousel-item-right ~
     .dropdownContent .cd-dropdown-icons .cd-dropdown-item::before {
       left: 25px;
     }
-    .dropdownContent > .has-children > ul {
+    .dropdownContent > .hasChildren > ul {
       visibility: hidden;
     }
-    .dropdownContent > .has-children > ul.is-active {
+    .dropdownContent > .hasChildren > ul.is-active {
       /* when hover over .dropdownContent items - show subnavigation */
       visibility: visible;
     }
-    .dropdownContent > .has-children > .secondaryDropdown.is-active > li > ul {
+    .dropdownContent > .hasChildren > .secondaryDropdown.is-active > li > ul {
       /* if .secondaryDropdown is visible - show also subnavigation */
       visibility: visible;
     }
-    .dropdownContent > .has-children > a.is-active {
+    .dropdownContent > .hasChildren > a.is-active {
       /* hover effect for .dropdownContent items with subnavigation */
       box-shadow: inset 2px 0 0 #3f8654;
       /* color: #3f8654; */
     }
-    .dropdownContent > .has-children > a.is-active::before, .dropdownContent > .has-children > a.is-active::after {
+    .dropdownContent > .hasChildren > a.is-active::before, .dropdownContent > .hasChildren > a.is-active::after {
       background: #3f8654;
     }
-    .open-to-left .dropdownContent > .has-children > a.is-active {
+    .open-to-left .dropdownContent > .hasChildren > a.is-active {
       box-shadow: inset -2px 0 0 #3f8654;
     }
 }
@@ -1249,18 +1218,18 @@ div.carousel-item.active.carousel-item-right ~
   border-radius: 0;
 }
 
-.has-children > a, .go-back a {
+.hasChildren > a, .go-back a {
   position: relative;
 }
 
-.secondaryDropdown .has-children > a::before, .go-back a::before {
+.secondaryDropdown .hasChildren > a::before, .go-back a::before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.secondaryDropdown .has-children > a::after, .go-back a::after {
+.secondaryDropdown .hasChildren > a::after, .go-back a::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -1268,15 +1237,15 @@ div.carousel-item.active.carousel-item-right ~
   transform: rotate(-45deg);
 }
 @media only screen and (min-width: 769px) {
-  .has-children > a::before, .has-children > a::after, .go-back a::before, .go-back a::after {
+  .hasChildren > a::before, .hasChildren > a::after, .go-back a::before, .go-back a::after {
     background: #b3b3b3;
   }
 }
 
-.has-children > a {
+.hasChildren > a {
   padding-right: 40px;
 }
-.has-children > a::before, .has-children > a::after {
+.hasChildren > a::before, .hasChildren > a::after {
   /* arrow goes on the right side - children navigation */
   right: 20px;
   -webkit-transform-origin: 9px 50%;
@@ -1287,11 +1256,11 @@ div.carousel-item.active.carousel-item-right ~
 }
 
 @media only screen and (min-width: 769px) {
-  .open-to-left .dropdownContent > .has-children > a {
+  .open-to-left .dropdownContent > .hasChildren > a {
     padding-left: 40px;
     padding-right: 20px;
   }
-  .open-to-left .dropdownContent > .has-children > a::before, .open-to-left .dropdownContent > .has-children > a::after {
+  .open-to-left .dropdownContent > .hasChildren > a::before, .open-to-left .dropdownContent > .hasChildren > a::after {
     right: auto;
     left: 20px;
     -webkit-transform-origin: 1px 50%;
